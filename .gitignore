@@ -1,0 +1,63 @@
+# git ignore template from: http://cocoaheads.tumblr.com/post/1350304132/gitignore-template-for-xcode3-4
+# cocos2d specific
+PLBlocks.framework/*
+*.pyc
+
+# old school
+.svn
+
+# osx noise
+.DS_store
+.DS_Store
+profile
+
+# Sparkle distribution Private Key (Don’t check me in!)
+dsa_priv.pem
+# XCode (and ancestors) per-user config (very noisy, and not relevant)
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+# Xcode 4
+xcuserdata/
+project.xcworkspace/
+# Generated files
+VersionX-revision.h
+*.[oa]
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+# automatic backup files
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+
+# Ignore generated configure
+js/src/configure
+
+# Ignore the entire build-android and build-ios directory
+# Note : to override .gitignore and commit changes to files in this directory
+# use "git commit -f <filename>"
+js/src/build-android/*
+js/src/build-ios/*
+js/src/build-win32/*
+js/src/build-osx/*
+js/src/build-linux/*
+!js/src/build-android/build.sh
+!js/src/build-ios/build.sh
+!js/src/build-ios/copy-header.sh
+!js/src/build-win32/build.sh
+!js/src/build-osx/build.sh
+!js/src/build-linux/build.sh
+
+# Ignore the Android dist files/directories
+./include
+./lib
+js/src/autom4te.cache
+

@@ -1,0 +1,21 @@
+
+build in js/src:
+autoconf-2.13
+cd build-linux
+../configure --enable-debug --disable-optimize
+make
+
+run in js/src/dist/bin
+
+encode js file to jsc:
+./decjsc -e Y.js
+and Y.js.jsc will been created.
+
+decode jsc file to js assemble:
+./decjsc -d Y.js.jsc
+and Y.js.jsc.jsdec will been created.
+ 
+
+
+
+
